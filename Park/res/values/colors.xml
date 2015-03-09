@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="transparenc">#00000000</color>
+    <color name="translucence">#20000000</color>
+    
+    <color name="blue">#4B79CC</color>
+    <color name="blue_dark">#3C4B5F</color>
+    <color name="blue_light">#83A3DC</color>
+    
+    <color name="red">#D13939</color>
+    
+    <color name="silver">#CCCCCC</color>
+    <color name="silver_light">#E3E3E3</color>
+    <color name="silver_dark">#999999</color>
+    
+    <color name="bg_activity">#f6f6f6</color>
+    <color name="bg_input_box">#f6f6f6</color>
+    
+    <color name="bg_view_normal">#f6f6f6</color>
+    <color name="bg_view_pressed">#E7DDDD</color>
+    
+    
+    <color name="bg_button_blue">@color/blue</color>
+    <color name="bg_button_blue_pressed">#416BB7</color>
+    <color name="bg_button_dark_blue">@color/blue_dark</color>
+    <color name="bg_button_dark_pressed">#2B3C53</color>
+    
+    <color name="text_white">@android:color/white</color>
+    <color name="text_black">@android:color/black</color>
+    <color name="text_dark">#666666</color>
+    <color name="text_silver_dark">@color/silver_dark</color>
+    
+</resources>

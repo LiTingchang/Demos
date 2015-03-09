@@ -1,0 +1,83 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    <style name="btn_large">
+        <item name="android:layout_width">137dp</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_btn_large</item>
+    </style>
+    
+    <style name="btn_middle">
+        <item name="android:layout_width">116dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_btn_large</item>
+    </style>
+    
+    <style name="btn_small">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_btn_large</item>
+    </style>
+    
+    <style name="btn_blue_large" parent="@style/btn_large">
+        <item name="android:background">@drawable/selector_btn_blue</item>
+    </style>
+    
+    <style name="btn_blue_dark_large" parent="@style/btn_large">
+        <item name="android:background">@drawable/selector_btn_blue_dark</item>
+    </style>
+    
+    <style name="btn_blue_middle" parent="@style/btn_middle">
+        <item name="android:background">@drawable/selector_btn_blue</item>
+    </style>
+    
+    <style name="btn_white_line_middle" parent="@style/btn_middle">
+        <item name="android:background">@drawable/selector_btn_white_line</item>
+    </style>
+    
+    <style name="btn_blue_line_small" parent="@style/btn_small">
+        <item name="android:background">@drawable/selector_btn_blue_line</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    
+    <style name="btn_red_line_small" parent="@style/btn_small">
+        <item name="android:background">@drawable/selector_btn_red_line</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+    
+    <style name="input_box">
+        <item name="android:background">@drawable/selector_input_box_bg</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/silver_dark</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLength">8</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+</resources>

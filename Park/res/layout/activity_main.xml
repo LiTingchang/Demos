@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@color/bg_activity"
+    android:orientation="vertical"
+    android:gravity="center" >
+    
+    			<EditText
+                android:id="@+id/inputPhoneNumber"
+                style="@style/input_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="输入车牌"
+                 />
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/bg_activity">
+        <TextView android:id="@+id/temp1"
+        style="@style/btn_blue_large"
+        android:text="@string/hello_world"  />
+        </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/bg_activity">
+        <TextView android:id="@+id/temp2"
+        style="@style/btn_blue_middle"
+        android:text="@string/hello_world"  />
+        </LinearLayout>
+    
+    
+    <TextView android:id="@+id/temp3"
+        style="@style/btn_blue_dark_large"
+        android:text="@string/hello_world"  />
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/bg_activity">
+        <TextView android:id="@+id/temp4"
+        style="@style/btn_blue_line_small"
+        android:text="确定"  />
+    </LinearLayout>
+    
+    
+    <TextView android:id="@+id/temp5"
+        style="@style/btn_white_line_middle"
+        android:text="@string/hello_world"  />
+    
+    <TextView android:id="@+id/temp6"
+        style="@style/btn_red_line_small"
+        android:text="收费"  />
+    
+
+</LinearLayout>
