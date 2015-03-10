@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <com.ltc.lib.commontitle.CommonTitle
+        xmlns:title="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        title:bgColor="@color/bg_title"
+        title:titleText="@string/title_main"
+        title:rightBtnSrc="@drawable/ic_title_info" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_activity"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            
+            
+            <TextView
+		        android:id="@+id/msg"
+		        android:layout_width="wrap_content"
+		        android:layout_height="62dp"
+		        android:gravity="center"
+		        android:textSize="@dimen/btn_text_size"
+		        android:textColor="@color/text_gray"
+		        android:text="输入手机号前10位\n单次插入10号码" />
+
+            <EditText
+                android:id="@+id/input_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:background="@drawable/edittext_bg"
+                android:hint="手机号：完整11位或前10位"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="11"
+                android:padding="12dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/addTypeTen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="0～9" />
+
+                <RadioButton
+                    android:id="@+id/addTypeHundred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="0～99" />
+
+                <RadioButton
+                    android:id="@+id/addTypeThousan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0～999" />
+            </RadioGroup>
+            
+            <Button
+                android:id="@+id/luck"
+                style="@style/btn"
+                android:background="@drawable/btn_green_bg"
+                android:text="试试手气" />
+
+            <Button
+                android:id="@+id/add"
+                style="@style/btn"
+                android:background="@drawable/btn_blue_bg"
+                android:text="插入手机号" />
+
+            <Button
+                android:id="@+id/delete"
+                style="@style/btn"
+                android:background="@drawable/btn_red_bg"
+                android:text="删除手机号" />
+            
+            <Button
+		        android:id="@+id/stop"
+		        style="@style/btn"
+                android:background="@drawable/btn_yellow_bg"
+		        android:text="停止" />
+            
+            <Button
+		        android:id="@+id/getManyTimes"
+		        style="@style/btn"
+                android:background="@drawable/btn_green_bg"
+		        android:text="增加可用额度" />
+            
+            <Button
+		        android:id="@+id/tips"
+		        style="@style/btn"
+		        android:textSize="@dimen/text_size_m"
+                android:background="@drawable/btn_green_bg"
+		        android:text="小米、华为、魅族、联想、酷派 权限设置" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

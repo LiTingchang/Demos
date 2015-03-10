@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="6dp" >
+
+    <TextView
+        android:id="@+id/fragment_rules_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dialog_title_margin_bottom"
+        android:layout_marginLeft="@dimen/dialog_title_margin_left"
+        android:layout_marginTop="@dimen/dialog_title_margin_top"
+        android:text="@string/tips_dialog_title"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size_dialog_title" />
+
+    <ImageView style="@style/line_dialog_title_style" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
+	    <ListView
+	        android:id="@+id/fragment_rules_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:background="@color/bg_normal"
+	        android:divider="@color/bg_normal"
+	        android:drawSelectorOnTop="false"
+	        android:cacheColorHint="@color/bg_activity"
+	        android:fadingEdge="none"
+	        android:scrollbars="none"/>
+    </LinearLayout>
+
+</LinearLayout>

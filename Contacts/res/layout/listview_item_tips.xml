@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rules_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_activity" >
+    
+    <ImageView
+        android:id="@+id/rules_item_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        android:paddingTop="4dp"
+        android:src="@drawable/shape_oval_red" />
+
+    <TextView
+        android:id="@+id/rules_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rules_item_li"
+        android:layout_alignTop="@id/rules_item_li"
+        android:layout_marginLeft="6dp"
+        android:textSize="@dimen/text_size_dialog_title" />
+
+    <TextView
+        android:id="@+id/rules_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rules_item_title"
+        android:layout_alignLeft="@id/rules_item_title"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/text_size_dialog_title"
+        android:textColor="@color/text_gray" />
+    
+</RelativeLayout>

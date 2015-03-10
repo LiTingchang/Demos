@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CHargeActivity"
+    android:orientation="vertical" >
+    
+    <com.ltc.lib.commontitle.CommonTitle
+        xmlns:title="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        title:bgColor="@color/bg_title"
+        title:titleText="@string/title_add_recharge"
+        title:backBtnSrc="@drawable/ic_title_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_activity"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            
+            
+            <TextView
+		        android:id="@+id/availableNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="62dp"
+		        android:gravity="center"
+		        android:text="当前可用额度0个"
+		        android:textSize="@dimen/btn_text_size"
+		        android:textColor="@color/text_gray" />
+
+            <EditText
+                android:id="@+id/inputPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:background="@drawable/edittext_bg"
+                android:hint="请输注册手机号"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="11"
+                android:padding="12dp" />
+            
+            <EditText
+                android:id="@+id/inputChargeCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:background="@drawable/edittext_bg"
+                android:hint="请输入充值码"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:padding="12dp" />
+
+            <Button
+		        android:id="@+id/chargeBtn"
+		        style="@style/btn"
+                android:background="@drawable/btn_green_bg"
+                android:layout_marginTop="24dp"
+		        android:text="增加可用额度" />
+            
+            <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="24dp"
+		        android:padding="12dp"
+		        android:gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:textColor="@color/text_gray"
+		        android:text="@string/buy_msg"/>
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="green">#00CF31</color>
+    
+    <color name="bg_title">@color/green</color>
+    <color name="bg_activity">#F5F5F5</color>
+    <color name="bg_normal">#f5f5f5</color>
+    
+    <color name="text_gray">#b3b3b3</color>
+    
+    <color name="dilaog_title_text_color">#ff0017</color>
+    
+     <!-- 线色值 -->
+    <color name="line_light">#fafafa</color>
+    <color name="line_dark">#d7d7d7</color>
+    <color name="line_dark_m">#ededed</color>
+    <color name="line_dialog_title">#FE1026</color>
+    <!-- 表格中的横线颜色 -->
+    <color name="line_dark2">#bfbfbf</color>
+    
+    <!-- 标题前的色块 -->
+    <color name="li_tag_red">#ce3843</color>
+    <color name="li_tag_blue">#1e92b6</color>
+    <color name="li_tag_yello">#ffc20e</color>
+    
+</resources>

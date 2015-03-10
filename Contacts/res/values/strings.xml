@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">营销助手</string>
+    <string name="title_main">@string/app_name</string>
+    <string name="title_add_recharge">充值</string>
+    <string name="title_about">关于</string>
+    <string name="action_settings">设置</string>
+    <string name="buy_msg">一个手机号仅1分钱</string>
+    <string name="about_msg">当前版本仅支持：\n手机通讯录批量增删\n后期会继续增加新功能\n敬请期待～～</string>
+
+    <!-- ，量大从优\n\n购买额度请咨询微信:Tdehoney\n验证请填写:微信营销助手 \n如有需求，请联系微信:Tdehoney -->
+    <string name="tips_dialog_title">权限设置</string>
+    <string-array name="tips_title_array">
+        <item>小米</item>
+        <item>华为</item>  
+        <item>魅族</item>
+        <item>联想</item>
+        <item>酷派</item>
+    </string-array>
+    
+    <string-array name="tips_content_array" formatted="false">        
+        <item>请将系统设置-应用-营销助手-权限管理-联系人记录权限设为允许即可。请设置好后重启手机打开应用查看。</item>
+        <item>请在系统设置-权限管理-权限管理-营销助手 设为信任此应用程序。请设置好后重启手机打开应用查看。</item>  
+        <item>请在设置-应用控制-营销助手中开启营销助手读取联系人权限。或在设置-应用控制-信任程序中开启信任营销助手。请设置好后重启手机打开应用查看。</item>
+        <item>请在乐安全软件或者手机自带的设置里查看：敏感行为监控-获取个人信息-将营销助手设置为信任。请设置好后重启手机打开应用查看。</item>
+        <item>请在酷管家-数据保护-读取联系人信息-允许营销助手读取。或在设置-安全-应用操作-开启营销助手读取联系人。设置好后重启手机打开应用查看。
+            \n\n如果重启后还是不能显示，请您在360安全卫士、手机管家、金山软件、乐安全、安卓优化大师此类软件里将营销助手设置为完全信任后，再次登录查看一下。</item>
+    </string-array>
+
+</resources>
