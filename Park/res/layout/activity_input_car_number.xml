@@ -2,48 +2,100 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_activity"
     android:orientation="vertical" >
-    
+
+    <EditText
+        android:id="@+id/input_plate_number"
+        style="@style/input_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="20dp"
+        android:hint="输入车牌" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/input_tab_1"
+            style="@style/input_tab"
+            android:checked="true"
+            android:text="@string/province" />
+
+        <RadioButton
+            android:id="@+id/input_tab_2"
+            style="@style/input_tab"
+            android:text="@string/plate_number" />
+
+        <RadioButton
+            android:id="@+id/input_tab_3"
+            style="@style/input_tab"
+            android:text="@string/special_plate" />
+    </RadioGroup>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/bg_activity"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
         android:fadingEdge="none"
         android:fillViewport="true"
         android:scrollbars="none" >
-        
-        
-        <LinearLayout 
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
-            
-            
+            android:gravity="center_horizontal" >
+
             <com.park.view.InputPanel
-		        android:id="@+id/input_panel" 
-		        style="@style/input_panel" />
-            
-            <com.park.view.InputPanel
-		        android:id="@+id/input_panel2" 
-		        style="@style/input_panel" />
-            
-            <com.park.view.InputPanel
-		        android:id="@+id/input_panel3" 
-		        style="@style/input_panel" />
-            
-            <com.park.view.InputPanel
-		        android:id="@+id/input_panel4" 
-		        style="@style/input_panel" />
-            
-            
-        </LinearLayout>
-        
-        
-        
+                android:id="@+id/input_panel1"
+                style="@style/input_panel" />
+
+            <LinearLayout
+                android:id="@+id/input_panel23_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.park.view.InputPanel
+                    android:id="@+id/input_panel2"
+                    style="@style/input_panel" />
+
+                <com.park.view.InputPanel
+                    android:id="@+id/input_panel3"
+                    style="@style/input_panel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/input_panel4_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.park.view.InputPanel
+                    android:id="@+id/input_panel4"
+                    style="@style/input_panel" />
+            </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
-    
-    
-    
+
+    <TextView
+        android:id="@+id/generate_order"
+        style="@style/btn_blue_large"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/gererate_order" />
 
 </LinearLayout>

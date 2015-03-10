@@ -2,6 +2,14 @@
 <resources>
 
     <string name="app_name">Park</string>
-    <string name="hello_world">生成订单</string>
+    
+    <string name="gererate_order">生成订单</string>
+    
+    <string name="plate_number">车牌号</string>
+    <string name="input_plate_number">车牌号</string>
+    
+    <string name="province">省份</string>
+    <string name="letter_number">字母/数字</string>
+    <string name="special_plate">特殊牌照</string>
 
 </resources>
