@@ -33,6 +33,8 @@ public class InputCarNumberActivity extends FragmentActivity{
     private EditText inputPlateNumber;
     private View generateOrder;
     
+    private View callSysKeyboard;
+    
     private StringBuffer plateNumer;
     
     @Override
@@ -55,6 +57,8 @@ public class InputCarNumberActivity extends FragmentActivity{
         radioBtn3 = (RadioButton) findViewById(R.id.input_tab_3);
         
         generateOrder = findViewById(R.id.generate_order);
+        
+        callSysKeyboard = findViewById(R.id.call_system_keyboard);
         
         //  省份
         String [] str = {"京", "津", "沪", "渝", "冀", "豫", "云", "辽", "黑", 
@@ -189,6 +193,15 @@ public class InputCarNumberActivity extends FragmentActivity{
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 
+            }
+        });
+        
+        callSysKeyboard.setOnClickListener(new View.OnClickListener() {
+            
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                inputPlateNumber.setInputType(InputType.TYPE_CLASS_TEXT);
             }
         });
     }

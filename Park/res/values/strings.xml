@@ -11,5 +11,7 @@
     <string name="province">省份</string>
     <string name="letter_number">字母/数字</string>
     <string name="special_plate">特殊牌照</string>
+    
+    <string name="call_system_keyboard">特殊牌照</string>
 
 </resources>
