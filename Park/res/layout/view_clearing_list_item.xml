@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp">
+    
+
+    <TextView android:id="@+id/clearing_plate_number"
+        android:layout_width="98dp"
+        android:layout_height="match_parent"
+        android:background="@color/blue_light"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_btn_xxl"
+        android:textStyle="bold"
+        android:text="A35"/>
+    
+    <TextView android:id="@+id/clearing_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/clearing_plate_number"
+        android:layout_marginLeft="19dp"
+        android:textColor="@color/silver_dark"
+        android:textSize="@dimen/text_btn_large"
+        android:text="2015-03-1 16：33：33"/>
+
+    <TextView android:id="@+id/clearing_btn"
+        style="@style/btn_blue_line_small"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:text="@string/charge"/>
+
+    <View style="@style/line_horizontal" 
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+

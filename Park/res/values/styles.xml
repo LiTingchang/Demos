@@ -17,6 +17,12 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     
+    <style name="line_horizontal">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/silver_dark</item>
+    </style>
+    
     
     <style name="btn_large">
         <item name="android:layout_width">137dp</item>

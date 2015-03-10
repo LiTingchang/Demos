@@ -185,7 +185,22 @@ public class InputCarNumberActivity extends FragmentActivity{
         inputPlateNumber.setInputType(InputType.TYPE_NULL);
         
 //        inputPlateNUmber.setInputType(InputType.TYPE_CLASS_TEXT);
-        
+
+//        inputPlateNumber.addTextChangedListener(new TextWatcher() {
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//
+//            }
+//
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//            }
+//        });
         
         generateOrder.setOnClickListener(new View.OnClickListener() {
             

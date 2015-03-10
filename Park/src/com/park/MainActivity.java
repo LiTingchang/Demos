@@ -37,6 +37,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 InputCarNumberActivity.launch(MainActivity.this);
                 break;
             case R.id.temp2:
+                ClearingActivity.launch(MainActivity.this);
 
                 break;
             case R.id.temp3:
