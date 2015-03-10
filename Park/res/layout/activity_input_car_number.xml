@@ -4,9 +4,46 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    <com.park.view.InputPanel
-        android:id="@+id/input_panel" 
-        style="@style/input_panel" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_activity"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            
+            
+            <com.park.view.InputPanel
+		        android:id="@+id/input_panel" 
+		        style="@style/input_panel" />
+            
+            <com.park.view.InputPanel
+		        android:id="@+id/input_panel2" 
+		        style="@style/input_panel" />
+            
+            <com.park.view.InputPanel
+		        android:id="@+id/input_panel3" 
+		        style="@style/input_panel" />
+            
+            <com.park.view.InputPanel
+		        android:id="@+id/input_panel4" 
+		        style="@style/input_panel" />
+            
+            
+        </LinearLayout>
+        
+        
+        
+    </ScrollView>
+    
+    
     
 
 </LinearLayout>

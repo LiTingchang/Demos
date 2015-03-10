@@ -11,6 +11,9 @@ public class MainActivity extends Activity {
     
     int [] views = {R.id.temp1, R.id.temp2, R.id.temp3,
             R.id.temp4, R.id.temp5, R.id.temp6,};
+    
+    
+//    editText.setInputType(InputType.TYPE_NULL);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

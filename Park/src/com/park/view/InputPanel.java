@@ -39,6 +39,13 @@ public class InputPanel extends LinearLayout{
     }
     
     public void init(List<InputChar> inputChars, int layoutResId) {
+        init(inputChars, layoutResId, 6);
+    }
+    
+    
+    public void init(List<InputChar> inputChars, int layoutResId, int numberColums) {
+        
+        myGridView.setNumColumns(numberColums);
         
         mInputChars = inputChars;
         
