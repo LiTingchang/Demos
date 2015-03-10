@@ -71,6 +71,7 @@
         <item name="android:textColor">@color/red</item>
     </style>
     
+    <!-- 输入框 -->
     <style name="input_box">
         <item name="android:background">@drawable/selector_input_box_bg</item>
         <item name="android:textColor">@android:color/black</item>
@@ -78,6 +79,26 @@
         <item name="android:lines">1</item>
         <item name="android:maxLength">8</item>
         <item name="android:padding">12dp</item>
+    </style>
+    
+    <!-- InputPanel-FullSizeGridView -->
+    <style name="input_panel_gridview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:horizontalSpacing">8dp</item>
+        <item name="android:verticalSpacing">8dp</item>
+        <item name="android:listSelector">@null</item>
+    </style>
+    
+    <!-- InputPanel -->
+    <style name="input_panel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">12dp</item>
     </style>
 
 </resources>
