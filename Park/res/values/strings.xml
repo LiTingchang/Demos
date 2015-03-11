@@ -26,6 +26,26 @@
         ]]>
     </string>
     
+    <string name="clearing_time">
+        <![CDATA[
+        <font color="#999999">%1$s</font> <font color="#CCCCCC">至</font> <font color="#999999">%2$s</font>
+        ]]> 
+    </string>
+    
+    <string name="clearing_time_length">
+        <![CDATA[
+        <font color="#CCCCCC">时长:</font> <font color="#999999">%1$s</font>
+        ]]> 
+    </string>
+    
+    
+    
+    <string name="clearing_money">%1$.2f元</string>
+    
+    <string name="flee">逃单</string>
+    <string name="clearing_by_cash">现金结算</string>
+    <string name="clearing_on_line">在线收款</string>
+    
     <string name="ok">确定</string>
     
 

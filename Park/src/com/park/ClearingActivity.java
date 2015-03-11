@@ -18,6 +18,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.park.bean.PlateNumber;
+import com.park.view.dialog.ClearingDialog;
 import com.park.view.dialog.ClearingSuccessDialog;
 import com.park.view.dialog.EnterSuccessDialog;
 
@@ -138,9 +139,42 @@ public class ClearingActivity extends FragmentActivity{
                     // TODO 获取结算金额
                     
                     // 显示对话框
-                    ClearingSuccessDialog dialog = ClearingSuccessDialog.newInstance(plateNumber.plateNO, 24.00);
+                    ClearingDialog dialog = ClearingDialog.newInstance(plateNumber.plateNO, 24.00,
+                            "16:33", "18:44", "2小时42分");
+                    dialog.setOnBtnClickListener(new ClearingDialog.OnBtnClickListener() {
+                        
+                        @Override
+                        public void onFleeClicked() {
+                            // TODO Auto-generated method stub
+                            
+                        }
+                        
+                        @Override
+                        public void onClearingOnline() {
+                            // TODO Auto-generated method stub
+                            
+                        }
+                        
+                        @Override
+                        public void onClearingByCash() {
+                            // TODO Auto-generated method stub
+                            
+                            // TODO 测试弹出成功对话框
+                            ClearingSuccessDialog dialog = ClearingSuccessDialog.newInstance(plateNumber.plateNO, 24.00);
+                            dialog.show(ClearingActivity.this.getSupportFragmentManager(),
+                                  "clearing_success_dialog");
+                        }
+                        
+                        @Override
+                        public void onCancleClicked() {
+                            // TODO Auto-generated method stub
+                            
+                        }
+                    });
                     dialog.show(ClearingActivity.this.getSupportFragmentManager(),
-                            "clearing_success_dialog");
+                          "clearing_dialog");
+                    
+                    
                 }
             });
             return convertView;

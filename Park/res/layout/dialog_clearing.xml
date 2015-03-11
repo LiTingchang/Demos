@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/dialog_width"
+    android:gravity="center_horizontal"
+    android:background="@color/silver_light"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_height="48dp"
+        android:layout_width="match_parent">
+        
+        <TextView
+	        android:id="@+id/dialog_flee_btn"
+	        style="@style/btn_red_line_small"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/flee" />
+        
+        <TextView 
+	        style="@style/dialog_title"
+	        android:text="@string/clearing"
+	        android:layout_centerInParent="true"/>
+        
+        <TextView
+	        android:id="@+id/dialog_cancle_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/selector_dialog_delete"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp" />
+        
+    </RelativeLayout>
+    
+    
+    
+    <View style="@style/line_horizontal"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"/>
+    
+    <TextView android:id="@+id/clearing_plate_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/shape_plate_bg"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"/>
+    
+    
+     <TextView android:id="@+id/clearing_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="22sp"
+        android:textColor="@color/blue"
+        android:text="24.00元"/>
+     
+     
+     <TextView android:id="@+id/clearing_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="28dp"
+        android:textSize="22sp"
+        android:textColor="@color/silver"/>
+     <TextView android:id="@+id/clearing_time_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/silver"/>
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="51dp"
+	     android:layout_marginBottom="28dp"
+         android:gravity="center">
+        
+         <TextView
+	        android:id="@+id/clearing_by_cash_btn"
+	        style="@style/btn_blue_middle"
+	        android:text="@string/clearing_by_cash"
+	        android:layout_marginRight="10dp" />
+         
+         <TextView
+	        android:id="@+id/clearing_on_line_btn"
+	        style="@style/btn_blue_middle"
+	        android:text="@string/clearing_on_line"
+	        android:layout_marginLeft="10dp" />
+         
+     </LinearLayout>
+     
+    
+    
+</LinearLayout>

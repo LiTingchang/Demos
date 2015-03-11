@@ -48,11 +48,12 @@
             android:text="确定" />
     </LinearLayout>
 
+    
     <TextView
         android:id="@+id/temp5"
         style="@style/btn_white_line_middle"
         android:text="@string/gererate_order" />
-
+    
     <TextView
         android:id="@+id/temp6"
         style="@style/btn_red_line_small"
