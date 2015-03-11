@@ -16,7 +16,7 @@
         <TextView
             android:id="@+id/temp1"
             style="@style/btn_blue_large"
-            android:text="@string/gererate_order" />
+            android:text="车辆入场" />
     </LinearLayout>
 
     <LinearLayout
@@ -28,7 +28,7 @@
         <TextView
             android:id="@+id/temp2"
             style="@style/btn_blue_middle"
-            android:text="@string/gererate_order" />
+            android:text="结算页面" />
     </LinearLayout>
 
     <TextView
