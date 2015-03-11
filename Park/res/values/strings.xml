@@ -16,5 +16,8 @@
     <string name="call_system_keyboard">特殊牌照</string>
     <string name="charge">收费</string>
     
+    <string name="clearing">车辆结算</string>
+    <string name="enter_success">入场成功！</string>
+    
 
 </resources>

@@ -15,6 +15,7 @@ import android.widget.RadioButton;
 
 import com.park.bean.InputChar;
 import com.park.view.InputPanel;
+import com.park.view.dialog.EnterSuccessDialog;
 
 public class InputCarNumberActivity extends FragmentActivity{
     
@@ -202,12 +203,16 @@ public class InputCarNumberActivity extends FragmentActivity{
 //            }
 //        });
         
+        // 生成订单
         generateOrder.setOnClickListener(new View.OnClickListener() {
             
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
+                EnterSuccessDialog dialog = EnterSuccessDialog.newInstance("京A88888");
+                dialog.show(InputCarNumberActivity.this.getSupportFragmentManager(),
+                        "enter_success_dialog");
                 
+                // TODO handler定时取消
             }
         });
         

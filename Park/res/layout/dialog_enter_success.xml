@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/dialog_width"
+    android:gravity="center_horizontal"
+    android:background="@color/silver_light"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="@dimen/text_btn_large"
+        android:textColor="@color/silver_dark"
+        android:text="@string/clearing"/>
+    
+    <View style="@style/line_horizontal"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/blue"
+        android:text="@string/enter_success"/>
+    
+    
+    <TextView android:id="@+id/enter_success_plate_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/shape_plate_bg"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"/>
+    
+</LinearLayout>

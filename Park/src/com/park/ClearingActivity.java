@@ -48,7 +48,7 @@ public class ClearingActivity extends FragmentActivity{
         listView = (ListView) findViewById(R.id.clearing_list);
         
         List<PlateNumber> plateNumbers = new ArrayList<PlateNumber>();
-        for(int i = 0; i < 4; ++i) {
+        for(int i = 0; i < 20; ++i) {
             PlateNumber plateNumber = new PlateNumber();
             plateNumber.plateNO = "京A88888";
             plateNumber.startTime = System.currentTimeMillis();
