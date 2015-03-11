@@ -44,7 +44,7 @@
          <TextView
 	        android:id="@+id/call_camera"
 	        style="@style/btn_white_line_middle"
-	        android:text="@string/gererate_order" />
+	        android:text="@string/scan_plate_number" />
         
     </LinearLayout>
     
