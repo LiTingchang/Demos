@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/dialog_width"
+    android:gravity="center_horizontal"
+    android:background="@color/silver_light"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/dialog_title"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/clearing"/>
+    
+    <View style="@style/line_horizontal"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"/>
+    
+    <TextView android:id="@+id/clearing_plate_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/shape_plate_bg"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"/>
+    
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/blue"
+        android:text="@string/clearing_success"/>
+    
+     <TextView android:id="@+id/clearing_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="22sp"
+        android:textColor="@color/silver_dark"
+        android:text="金额：24.00元"/>
+     
+     <TextView
+        android:id="@+id/clearing_success_ok_btn"
+        style="@style/btn_blue_middle"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/ok" />
+    
+    
+</LinearLayout>

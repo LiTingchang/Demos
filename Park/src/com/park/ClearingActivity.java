@@ -18,6 +18,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.park.bean.PlateNumber;
+import com.park.view.dialog.ClearingSuccessDialog;
+import com.park.view.dialog.EnterSuccessDialog;
 
 public class ClearingActivity extends FragmentActivity{
     
@@ -132,8 +134,13 @@ public class ClearingActivity extends FragmentActivity{
                 
                 @Override
                 public void onClick(View v) {
-                    // TODO Auto-generated method stub
                     
+                    // TODO 获取结算金额
+                    
+                    // 显示对话框
+                    ClearingSuccessDialog dialog = ClearingSuccessDialog.newInstance(plateNumber.plateNO, 24.00);
+                    dialog.show(ClearingActivity.this.getSupportFragmentManager(),
+                            "clearing_success_dialog");
                 }
             });
             return convertView;

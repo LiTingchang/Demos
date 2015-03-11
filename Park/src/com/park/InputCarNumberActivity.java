@@ -212,7 +212,7 @@ public class InputCarNumberActivity extends FragmentActivity{
                 dialog.show(InputCarNumberActivity.this.getSupportFragmentManager(),
                         "enter_success_dialog");
                 
-                // TODO handler定时取消
+                // TODO handler定时取消 或者别的业务逻辑
             }
         });
         

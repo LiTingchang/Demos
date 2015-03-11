@@ -124,7 +124,7 @@
     <style name="dialog_title">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/silver_dark</item>
+        <item name="android:textColor">@color/silver_dark_h</item>
         <item name="android:textSize">@dimen/text_btn_large</item>
     </style>
 
